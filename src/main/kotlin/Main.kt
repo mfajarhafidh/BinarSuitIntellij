@@ -12,5 +12,5 @@ fun main(args: Array<String>){
     println("Masukkan pemain 2 : ")
     val player2 = readLine()!!.toString()
 
-    suit.suitGunting(player1, player2)
+    suit.suitPlay(player1, player2)
 }

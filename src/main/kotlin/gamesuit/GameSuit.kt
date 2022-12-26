@@ -5,7 +5,9 @@ class GameSuit (
     private val batu: String = "Batu",
     private val kertas: String = "Kertas"
 ) {
-    fun suitGunting(player1:String, player2:String){
+    fun suitPlay(player1:String, player2:String){
+
+        //Gunting
         if(player1==this.gunting && player2==this.gunting){
             return println("Draw")
         }
@@ -15,6 +17,8 @@ class GameSuit (
         else if(player1==this.gunting && player2==this.batu){
             return println("Player 2 Menang")
         }
+
+        //Kertas
         else if(player1 == this.kertas && player2 == this.gunting){
             return println("Player 2 Menang")
         }
@@ -24,6 +28,8 @@ class GameSuit (
         else if(player1 == this.kertas && player2 == this.kertas){
             return println("Draw")
         }
+
+        //Batu
         else if(player1 == this.batu && player2 == this.gunting){
             return println("Player 1 Menang")
         }
